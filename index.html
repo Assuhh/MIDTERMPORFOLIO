@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acesuu</title>
+  <link rel="icon" href="Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+  <button class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="sidebar" id="sidebar">
+    <h1>PERSONAL <span id="dynamic-text" style="color: black;">PORTFOLIO</span></h1>
+    <ul>
+      <li><a href="#home" onclick="toggleSidebar()">Home</a></li>
+      <li><a href="#about" onclick="toggleSidebar()">About</a></li>
+      <li><a href="#services" onclick="toggleSidebar()">Skills</a></li>
+      <li><a href="#experience" onclick="toggleSidebar()">Experience</a></li>
+      <li><a href="#portfolio" onclick="toggleSidebar()">Works</a></li>
+      <li><a href="#contact" onclick="toggleSidebar()">Contact</a></li>
+    </ul>
+
+    <!-- ✅ Move social icons here -->
+    <div class="social-icons">
+      <a href="https://facebook.com/acewwk" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://github.com/Assuhh" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://instagram.com/riggs0o_/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://discord.com/users/1137568129610960899" target="_blank"><i class="fa-brands fa-discord"></i></a>
+    </div>
+  </div>
+  <main>
+    <section id="home">
+      <header>Hi There...<br><span style="color: black; font-weight: 900;">I AM</span> ACE KARL BUITIZON</header>
+      <p>I Am An IT College Student</p>
+      <p>A college student at Cavite State University, currently taking up a degree in Information Technology.</p>
+      <button class="btn" onclick="window.location.href='#about'">About Me</button>
+    </section>
+
+    <section id="about">
+      <header>ABOUT ME</header>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+        <img src="ako.jpg" alt="Profile" style="border-radius: 10px; width: 150px; /* Adjust the size as needed */
+        height: 150px; /* Keep the aspect ratio intact */
+        object-fit: cover; /* Ensures the image covers the area without stretching */
+        border-radius: 50%; /* To make it circular */" />
+        <div>
+          <p>I'm passionate about front-end development and always eager to learn new skills and improve my knowledge in web design and programming.</p>
+          <p>I'm still gaining experience through school projects and self-study, and I'm always looking to improve my skills.</p>
+          <p><strong>Age:</strong> 21<br>
+            <strong>Gender:</strong> Male<br>
+            <strong>Language:</strong> Tagalog, English<br>
+            <strong>Interest:</strong> Front-End Developer/Designer<br>
+            <strong>Nationality:</strong> Filipino<br>
+            <strong>Phone:</strong> +639276430884<br>
+            <strong>Email:</strong> buitizonacekarl@gmail.com<br>
+            <strong>Country:</strong> Las Piñas, Philippines</p>
+            <a href="RESUME PRO.png" download="AceKarlBuitizon_CV">
+              <button class="btn">Download Biography</button>
+            </a>
+          <button class="btn" onclick="window.location.href='#contact'">Contact Me</button>
+        </div>
+      </div>
+
+      <h2 style="margin-top:2rem;">SKILL GRAPH</h2>
+      <p>Web Design</p>
+      <div class="skills-bar"><span style="width:95%"></span></div>
+      <p>Web Development</p>
+      <div class="skills-bar"><span style="width:80%"></span></div>
+      <p>UI/UX Design</p>
+      <div class="skills-bar"><span style="width:65%"></span></div>
+    </section>
+
+    <section id="services">
+      <header>MY SKILLS</header>
+      <div class="card-grid">
+        <div class="card"><i>💻</i><h3>Web Design</h3><p>Creating websites with web design.</p></div>
+        <div class="card"><i>🌐</i><h3>Web Development</h3><p>Building websites with web development.</p></div>
+        <div class="card"><i>🕳️</i><h3>Django</h3><p>Learning Django to build web apps.</p></div>
+        <div class="card"><i>🐍</i><h3>Python</h3><p>Writing code and solving problems with Python.</p></div>
+        <div class="card"><i>🎨</i><h3>Front-end</h3><p>Creating interactive websites with front-end.</p></div>
+        <div class="card"><i>📏</i><h3>Problem Solving</h3><p>Solving problems through logical thinking.</p></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <header>EXPERIENCE</header>
+      <ul>
+        <li><strong>2023 - Present:</strong> Currently studying projects like HTML, CSS, JavaScript, Python and Django.</li>
+        <li><strong>2022 - 2023:</strong> Developed web development and database management and a few front-end. </li>
+        <li><strong>2021 - 2022:</strong> Self-learning phase, built personal projects/works.</li>
+      </ul>
+    </section>
+
+    <section id="portfolio">
+      <header>MY WORKS</header>
+      <div class="card-grid">
+        <div class="card1">
+          <img src="calendar.jpg" alt="Java Calendar">
+          <h3>Java Calendar</h3>
+        </div>
+        <div class="card1">
+          <img src="milktea.png" alt="E-commerce Website">
+          <h3>E-commerce Website</h3>
+        </div>
+        <div class="card1">
+          <img src="cave.png" alt="Landing Page">
+          <h3>Game Project</h3>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <header>CONTACT ME</header>
+      <p><strong>Email:</strong> buitizonacekarl@gmail.com</p>
+      <p><strong>Phone:</strong> +639276430884</p>
+      <p><strong>Location:</strong> Las Piñas, Philippines</p>
+      <p>Feel free to reach out for collaborations or projects!</p>
+      <a href="mailto:buitizonacekarl@gmail.com">
+        <button class="btn">Email Me</button>
+      </a>
+    </section>
+  </main>
+
+
+  <script src="effect.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
+
